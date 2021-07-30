@@ -25,19 +25,19 @@ cd ~/catkin_ws && catkin_make
 
 Now open the bashrc file by the command given below,
 
-```
+```sh
 gedit ~/.bashrc
 ```
 
 and add the below given line to the bottom of the bashrc file,
 
-```
+```sh
 export TURTLEBOT3_MODEL=burger
 ```
 
 Save the file and close it and then source the file using the following command, 
 
-```
+```sh
 source ~/.bashrc
 ```
 
@@ -45,11 +45,11 @@ source ~/.bashrc
 
 To download the files follow the commands,
 
-```
+```sh
 cd ~/catkin_ws/src/
 ```
 
-```
+```sh
 git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 ```
 
@@ -61,7 +61,7 @@ cd ~/catkin_ws && catkin_make
 
 Open a new Terminal Window,
 
-```
+```sh
 sudo apt install ros-melodic-slam-gmapping
 ``` 
 
@@ -69,19 +69,19 @@ sudo apt install ros-melodic-slam-gmapping
 
 Open Gazebo a new Terminal Window,
 
-```
+```sh
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 
 Open SLAM in a new Terminal Window in the rviz.
 
-```
+```sh
 roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
 
 Starting the Autonomous Navigation of the robot in a new Terminal Window:
 
-```
+```sh
 roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
 ```
 
